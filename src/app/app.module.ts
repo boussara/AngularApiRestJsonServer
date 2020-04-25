@@ -2,7 +2,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+// Import your library
+import { AlertsModule } from 'angular-alert-module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { TasksComponent } from './Components/tasks/tasks.component';
@@ -18,7 +19,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AlertsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
